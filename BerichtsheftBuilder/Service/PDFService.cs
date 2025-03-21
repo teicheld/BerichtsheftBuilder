@@ -9,7 +9,7 @@ namespace BerichtsheftBuilder.Service
 {
     public class PDFService
     {
-        public void generate(string path, string name, string abteilung, DateTime begin, DateTime end, List<TaskDto> tasks, string fontFamily = "CMU Sans Serif")
+        public void generate(string path, string name, string abteilung, DateTime begin, DateTime end, List<TaskDto> tasks, string fontFamily = "Arial")
         {
             Document.Create(container =>
             {
